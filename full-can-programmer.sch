@@ -36,10 +36,6 @@ Wire Wire Line
 	5375 2300 5525 2300
 Wire Wire Line
 	5375 2400 5525 2400
-Wire Wire Line
-	5375 2500 5525 2500
-Wire Wire Line
-	5375 2600 5525 2600
 $Comp
 L MCU_Microchip_ATtiny:ATtiny85-20SU U1
 U 1 1 678046C5
@@ -110,8 +106,6 @@ Wire Wire Line
 	6325 4125 6500 4125
 Wire Wire Line
 	6325 4225 6500 4225
-NoConn ~ 6325 4325
-NoConn ~ 6325 3925
 Text Label 4225 3850 2    50   ~ 0
 VIN
 Wire Wire Line
@@ -119,7 +113,7 @@ Wire Wire Line
 Wire Wire Line
 	4225 4350 4225 4200
 Text Notes 5325 2800 0    50   ~ 0
-Programming Header
+Mounting Header
 Text Notes 3925 4725 0    50   ~ 0
 Decoupling Cap
 Text Notes 5250 5050 0    50   ~ 0
@@ -208,4 +202,49 @@ Wire Wire Line
 Connection ~ 8575 4075
 Wire Wire Line
 	8575 4075 7025 4075
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 6781410F
+P 7100 2400
+F 0 "J2" H 7180 2392 50  0000 L CNN
+F 1 "Conn_01x04" H 7180 2301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7100 2400 50  0001 C CNN
+F 3 "~" H 7100 2400 50  0001 C CNN
+	1    7100 2400
+	1    0    0    -1  
+$EndComp
+Text Notes 6700 2800 0    50   ~ 0
+Programming Header
+Text Label 6725 2600 2    50   ~ 0
+SCK
+Text Label 6700 2400 2    50   ~ 0
+MOSI
+Wire Wire Line
+	6725 2600 6900 2600
+Wire Wire Line
+	6725 2500 6900 2500
+Text Label 5000 2500 2    50   ~ 0
+SCK
+Text Label 5000 2600 2    50   ~ 0
+MOSI
+Wire Wire Line
+	5000 2600 5525 2600
+Wire Wire Line
+	5000 2500 5525 2500
+Text Label 6700 2300 2    50   ~ 0
+RESET
+Text Label 6725 2500 2    50   ~ 0
+MISO
+Wire Wire Line
+	6700 2300 6900 2300
+Wire Wire Line
+	6700 2400 6900 2400
+Text Label 6500 4325 0    50   ~ 0
+RESET
+Wire Wire Line
+	6325 4325 6500 4325
+Text Label 6500 3925 0    50   ~ 0
+MISO
+Wire Wire Line
+	6325 3925 6500 3925
 $EndSCHEMATC

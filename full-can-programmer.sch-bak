@@ -118,8 +118,8 @@ Wire Wire Line
 	4225 3850 4225 4000
 Wire Wire Line
 	4225 4350 4225 4200
-Text Notes 5325 2850 0    50   ~ 0
-Programming Header\n      (stacked)
+Text Notes 5325 2800 0    50   ~ 0
+Programming Header
 Text Notes 3925 4725 0    50   ~ 0
 Decoupling Cap
 Text Notes 5250 5050 0    50   ~ 0
